@@ -10,15 +10,11 @@ namespace Prime.UnitTests.Services
         {
             var primeService = new PrimeService();
             bool result = primeService.IsPrime(1);
-            Assert.pass(result, "1 should not be prime");
-        }
-		
-		[Fact]
-        public void IsPrime_InputIs2()
-        {
-            var primeService = new PrimeService();
-            bool result = primeService.IsPrime(2);
-            Assert.pass(result, "1 should not be prime");
+			if(result){
+				Assert.Pass("Success");
+			}else{
+				Assert.Fail("Fail");
+			}
         }
     }
 }
