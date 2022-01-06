@@ -10,7 +10,10 @@ namespace Prime.Services
 			{
 				return false;
 			}
-			throw new NotImplementedException("Not fully implemented.");
+			else if (candidate == 2)
+			{
+				return true;
+			}
 		}
     }
 }

@@ -9,8 +9,16 @@ namespace Prime.UnitTests.Services
         public void IsPrime_InputIs1_ReturnFalse()
         {
             var primeService = new PrimeService();
+            bool result = primeService.IsPrime(1);
+            Assert.pass(result, "1 should not be prime");
+        }
+		
+		[Fact]
+        public void IsPrime_InputIs2()
+        {
+            var primeService = new PrimeService();
             bool result = primeService.IsPrime(2);
-            Assert.False(result, "1 should not be prime");
+            Assert.pass(result, "1 should not be prime");
         }
     }
 }
