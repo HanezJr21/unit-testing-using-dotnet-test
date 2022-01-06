@@ -6,14 +6,16 @@ namespace Prime.Services
     {
         public bool IsPrime(int candidate)
 		{
+			bool result=true;
 			if (candidate == 1)
 			{
-				return false;
+				result=false;
 			}
 			else if (candidate == 2)
 			{
-				return true;
+				result=true;
 			}
+			return result;
 		}
     }
 }
