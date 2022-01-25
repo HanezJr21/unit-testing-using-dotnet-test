@@ -1,0 +1,3 @@
+[submodule "src/dotnet-core-api"]
+	path = src/dotnet-core-api
+	url = https://github.com/HanezJr21/dotnet-core-api.git
